@@ -37,7 +37,7 @@ function gradeQuiz(candidateAnswers) {
   console.log("Your Answer:", candidateAnswer);
   console.log("Correct Answer:", correctAnswer);
   console.log("");
-  if (candidateAnswer === correctAnswer) {
+  if (candidateAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
     grade += 1
     console.log("Nice work!");
     console.log("You got", grade, "out of 1 question right.");
