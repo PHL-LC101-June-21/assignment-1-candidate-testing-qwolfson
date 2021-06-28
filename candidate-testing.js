@@ -36,8 +36,8 @@ function gradeQuiz(candidateAnswers) {
 
 let grade = 0
 
-for (i=0; i<questions.length; i++){
-  if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()){
+for (i=0; i<questions.length; i++) {
+  if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
     grade++
   } else {
     grade = grade
@@ -49,29 +49,13 @@ for (i=0; i<questions.length; i++){
 
 let gradePercent = (grade/5)*100
 
-if(gradePercent>80){
+if(gradePercent>80) {
   console.log(`You got ${gradePercent}% of the questions right. You passed!`)
-} else{
+} else {
   console.log(`You got only got ${gradePercent}% of the questions right.  You failed.`)
 }
 
-  //let grade = 0;
-  //console.log("")
-  //console.log("Candidate Name:", candidateName);
-  //console.log("1)", question);
-  //console.log("Your Answer:", candidateAnswer);
-  //console.log("Correct Answer:", correctAnswer);
-  //console.log("");
-  //if (candidateAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
-   //grade += 1
-    //console.log("Nice work!");
-    //console.log("You got", grade, "out of 1 question right.");
-  //} else {
-    //console.log("Not quite! You got", grade, "out of 1 question right. Better luck next time.");
- // }
-  
-
-  //return grade;
+return gradePercent
 }
 
 function runProgram() {
